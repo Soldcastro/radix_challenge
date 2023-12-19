@@ -1,0 +1,23 @@
+[2023-09-15 06:05:20,122] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: covid_analytics_load.trusted_load 2023-09-15T06:03:52.911109+00:00 [queued]>
+[2023-09-15 06:05:20,133] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: covid_analytics_load.trusted_load 2023-09-15T06:03:52.911109+00:00 [queued]>
+[2023-09-15 06:05:20,134] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2023-09-15 06:05:20,134] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2023-09-15 06:05:20,134] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2023-09-15 06:05:20,150] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): trusted_load> on 2023-09-15T06:03:52.911109+00:00
+[2023-09-15 06:05:20,154] {standard_task_runner.py:52} INFO - Started process 866 to run task
+[2023-09-15 06:05:20,160] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'covid_analytics_load', 'trusted_load', '2023-09-15T06:03:52.911109+00:00', '--job-id', '6', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/covid_analytics_dag.py', '--cfg-path', '/tmp/tmp1fea3kg1', '--error-file', '/tmp/tmp5xwy8_ux']
+[2023-09-15 06:05:20,166] {standard_task_runner.py:77} INFO - Job 6: Subtask trusted_load
+[2023-09-15 06:05:20,214] {logging_mixin.py:104} INFO - Running <TaskInstance: covid_analytics_load.trusted_load 2023-09-15T06:03:52.911109+00:00 [running]> on host 1e9a66893905
+[2023-09-15 06:05:20,257] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=solano.d.castro@gmail.com
+AIRFLOW_CTX_DAG_OWNER=Airflow
+AIRFLOW_CTX_DAG_ID=covid_analytics_load
+AIRFLOW_CTX_TASK_ID=trusted_load
+AIRFLOW_CTX_EXECUTION_DATE=2023-09-15T06:03:52.911109+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-09-15T06:03:52.911109+00:00
+[2023-09-15 06:05:38,840] {python.py:118} INFO - Done. Returned value was: None
+[2023-09-15 06:05:38,870] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=covid_analytics_load, task_id=trusted_load, execution_date=20230915T060352, start_date=20230915T060520, end_date=20230915T060538
+[2023-09-15 06:05:38,938] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-09-15 06:05:38,963] {local_task_job.py:146} INFO - Task exited with return code 0

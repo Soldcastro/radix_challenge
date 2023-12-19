@@ -1,0 +1,26 @@
+[2023-09-16 03:19:37,234] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: covid_analytics_load.refined_load 2023-09-15T00:00:00+00:00 [queued]>
+[2023-09-16 03:19:37,268] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: covid_analytics_load.refined_load 2023-09-15T00:00:00+00:00 [queued]>
+[2023-09-16 03:19:37,268] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2023-09-16 03:19:37,268] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2023-09-16 03:19:37,268] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2023-09-16 03:19:37,302] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): refined_load> on 2023-09-15T00:00:00+00:00
+[2023-09-16 03:19:37,310] {standard_task_runner.py:52} INFO - Started process 6456 to run task
+[2023-09-16 03:19:37,317] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'covid_analytics_load', 'refined_load', '2023-09-15T00:00:00+00:00', '--job-id', '9', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/covid_analytics_dag.py', '--cfg-path', '/tmp/tmp0yd1w1kc', '--error-file', '/tmp/tmpn67flkut']
+[2023-09-16 03:19:37,324] {standard_task_runner.py:77} INFO - Job 9: Subtask refined_load
+[2023-09-16 03:19:37,426] {logging_mixin.py:104} INFO - Running <TaskInstance: covid_analytics_load.refined_load 2023-09-15T00:00:00+00:00 [running]> on host 1e9a66893905
+[2023-09-16 03:19:37,535] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=solano.d.castro@gmail.com
+AIRFLOW_CTX_DAG_OWNER=Airflow
+AIRFLOW_CTX_DAG_ID=covid_analytics_load
+AIRFLOW_CTX_TASK_ID=refined_load
+AIRFLOW_CTX_EXECUTION_DATE=2023-09-15T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-09-15T00:00:00+00:00
+[2023-09-16 03:19:46,792] {local_task_job.py:77} ERROR - Received SIGTERM. Terminating subprocesses
+[2023-09-16 03:19:47,245] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 6456
+[2023-09-16 03:19:47,333] {taskinstance.py:1239} ERROR - Received SIGTERM. Terminating subprocesses.
+[2023-09-16 03:19:47,476] {process_utils.py:66} INFO - Process psutil.Process(pid=6458, status='terminated', started='03:19:36') (6458) terminated with exit code None
+[2023-09-16 03:19:47,495] {process_utils.py:66} INFO - Process psutil.Process(pid=6457, status='terminated', started='03:19:36') (6457) terminated with exit code None
+[2023-09-16 03:19:48,179] {process_utils.py:66} INFO - Process psutil.Process(pid=6456, status='terminated', exitcode=1, started='03:19:36') (6456) terminated with exit code 1
+[2023-09-16 03:19:50,399] {process_utils.py:66} INFO - Process psutil.Process(pid=6465, status='terminated', started='03:19:37') (6465) terminated with exit code None
