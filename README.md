@@ -159,15 +159,6 @@ Para a entrega da solução, os seguintes artefatos deverão estar presentes no 
 - Código fonte desenvolvido na pasta **dags**.
 - Arquivos **.parquet** das camadas **trusted** e **refined** na pasta **datalake**
 
-Ao finalizar, envie um email para o o recrutador responsável pelo seu processo seguindo o padrão de assunto: "Prova 1 - [Nome] - [Tecnologia]".
-
-Não esqueça de adicionar o usuário **radix.recruit** como reporter do seu repositório.
-
-Crie ou edite o README do seu repositório para realizar comentários e/observações, por exemplo, o que achou dos desafios ou maiores dificuldades encontradas.
-
-Bom desafio!!!
-
-
 Observações do Solano:
 O desafio foi bem interessante me fazendo relembrar algumas funções do Spark que não lembrava, assim como a construção das tabelas a partir dos arquivos "pouco amigáveis" que foi divertido. Senti dificuldade na parte da média móvel pois não costumo mexer muito com Analytics e portanto um pouco enferrujado.
 Optei por criar scripts separados para os processos e emular um BashOperator com a biblioteca os por questão de organização. Poderia ter colocado todo o script dentro da DAG separado por funções mas acredito que fique melhor para manutenção com os scripts apartados. 
